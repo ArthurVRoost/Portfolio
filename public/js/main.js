@@ -11,3 +11,12 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+// MENU BURGER
+var sideMenu = document.getElementById("sideMenu")
+
+    function openMenu() {
+        sideMenu.style.right = "0px"
+    }
+    function closeMenu() {
+        sideMenu.style.right = "-200px"
+    }

@@ -10,17 +10,20 @@
 </head>
 <body>
     <!-- HEADER/NAV -->
-    <header>
+    <header id="header">
          <div class="container">
             <nav>
                 <h2 class="navH2">ARTHUR.</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                
             </nav>
             <div class="header-text">
                 <p>Fullstack Web-Developper</p>
@@ -160,5 +163,16 @@
         <p>Copyright &copy; Arthur  2025. </p>
     </div>
  </section>
+<script>
+    var sideMenu = document.getElementById("sideMenu")
+
+    function openMenu() {
+        sideMenu.style.right = "0px"
+    }
+    function closeMenu() {
+        sideMenu.style.right = "-200px"
+    }
+</script>
+ 
 </body>
 </html>

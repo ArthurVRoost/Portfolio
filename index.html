@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur's Portfolio</title>
     <link rel="stylesheet" href="./public/style/style.css">
-    <script defer src="./public/js/main.js"></script>
+    <script src="./public/js/main.js"></script>
 </head>
 <body>
+    <!-- HEADER/NAV -->
     <header>
          <div class="container">
             <nav>
@@ -26,5 +27,48 @@
             </div>
          </div>
     </header>
+
+    <!-- SECTION1 ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>My name is Arthur Van Roost i'm 24 years old and currently in training at MolenGeek to become a full-stack web-developper. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis ratione provident non tenetur nihil numquam earum aut! Reiciendis, veritatis minus nesciunt consectetur id fuga nemo possimus. Debitis, expedita ullam.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>Web-Designer</li>
+                            <li><span>Back-End</span><br>PLUS TARD</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Front-End</span><br>PLUS TARD</li>
+                            <li><span>Back-End</span><br>PLUS TARD</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Front-End</span><br>PLUS TARD</li>
+                            <li><span>Back-End</span><br>PLUS TARD</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
 </body>
 </html>

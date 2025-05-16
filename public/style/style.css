@@ -234,7 +234,7 @@ nav ul li a:hover::after{
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
-    transition: height 1.2s;
+    transition: height 0.8s;
 }
 
 .layer h3{
@@ -411,4 +411,7 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+}
+.imgPortfolio{
+    object-fit: contain;
 }

@@ -21,7 +21,11 @@ body{
     padding: 10px 10%;
 
 }
-
+.imgHeader{
+    position: absolute;
+    top: 8%;
+    right: 10%;
+}
 nav{
     display: flex;
     align-items: center;
@@ -420,6 +424,11 @@ nav .fa-solid{
     }
     .copyright{
         font-size: 14px;
+    }
+    .imgHeader{
+        height: 350px;
+        top: 10%;
+        right: 30%;
     }
 }
 .imgPortfolio{

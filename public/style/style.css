@@ -361,6 +361,26 @@ form .btn2{
     display: flex;
 }
 
+.slide-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 /* RESPONSIVE */
 nav .fa-solid{
     display: none;

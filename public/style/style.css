@@ -204,18 +204,25 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    flex-wrap: wrap;
+    width: 76vw;
+    margin-left: 3%;
 }
 
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 500px;
+    width: 370px;
+    
 }
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: contain;
 }
 
 .layer{
